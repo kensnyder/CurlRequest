@@ -205,9 +205,6 @@ class CurlRequest {
 		if ($url) {
 			$this->setUrl($url);
 		}
-		// Some servers (like Lighttpd) will not process the curl request without this 'Expect:' header and will return error code 417 instead. 
-        // Apache does not need it, but it is safe to use it there as well.
-		$this->addHeader("Expect:");
 		// by default, follow redirects
 		$this->setopt(CURLOPT_FOLLOWLOCATION, 1);
 		// by default, store cookies in memory
