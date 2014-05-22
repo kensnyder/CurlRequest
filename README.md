@@ -1,4 +1,5 @@
 CurlRequest
 ===========
 
-bject-oriented cURL requests in PHP
+Object-oriented cURL requests in PHP
+
